@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./skills.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="nav">
+          <img src="./assets/Rectangle 181.png" alt="" />
+        <div class="center-nav">
+          <div class="nav-item">
+            <a href="./index.html">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="./skills.html">Skills</a>
+          </div>
+          <div class="nav-item">
+            <a href="">Education</a>
+          </div>
+          <div class="nav-item">
+            <a href="#projects">Project</a>
+          </div>
+          <div class="nav-item">
+            <a href="#recommendations">Recommendations</a>
+          </div>
+          <div class="nav-item">
+            <a href="#leavemeinfo">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="main">
+        <div class="text">
+            <h1>Skills & Languages</h1>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+        </div>
+            <div class="skill-sections">
+            <div class="skill-category" id="frontEnd">
+                <h3>Front End Development</h3>
+                <div class="skill-card">
+                    <p>HTML</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill-card">
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <p>85%</p>
+                </div>
+                <div class="skill-card">
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <p>80%</p>
+                </div>
+            </div>    
+            <div class="skill-category" id="languages">
+                <h3>Languages</h3>
+                <div class="skill-card">
+                    <p>Hindi</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill-card">
+                    <p>English</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <p>85%</p>
+                </div>
+            </div>    
+            <div class="skill-category" id="backEnd">
+                <h3>Back End Development</h3>
+                <div class="skill-card">
+                    <p>Node.js</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p>90%</p>
+                </div>
+                <div class="skill-card">
+                    <p>SSR</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <p>85%</p>
+                </div>
+            </div>
+        </div>
+    
+        <button id="addSkillButton">Add Skill</button>
+      </div>
+
+<div class="modal" style="display: none;">
+  <div class="modal-content">
+      <h2>Add Skill</h2>
+      <form id="addSkillForm">
+          <div class="input-group">
+              <label for="domain">Domain</label>
+              <input type="text" id="domain" name="domain" placeholder="Enter domain">
+          </div>
+          <div class="input-group">
+              <label for="skill">Skills</label>
+              <div class="skill-row">
+                  <input type="text" name="skill1" placeholder="Skill">
+                  <input type="number" name="proficiency1" placeholder="Proficiency (%)" min="0" max="100" value="0">
+              </div>
+              <div class="skill-row">
+                  <input type="text" name="skill2" placeholder="Skill">
+                  <input type="number" name="proficiency2" placeholder="Proficiency (%)" min="0" max="100" value="0">
+              </div>
+              <div class="skill-row">
+                  <input type="text" name="skill3" placeholder="Skill">
+                  <input type="number" name="proficiency3" placeholder="Proficiency (%)" min="0" max="100" value="0">
+              </div>
+              <div class="skill-row">
+                  <input type="text" name="skill4" placeholder="Skill">
+                  <input type="number" name="proficiency4" placeholder="Proficiency (%)" min="0" max="100" value="0">
+              </div>
+              <div class="skill-row">
+                  <input type="text" name="skill5" placeholder="Skill">
+                  <input type="number" name="proficiency5" placeholder="Proficiency (%)" min="0" max="100" value="0">
+              </div>
+          </div>
+          <div class="buttons">
+              <button type="submit" id="addSkillButton">Add Skill</button>
+              <button type="button" class="cancel">Cancel</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+<div class="skill-sections"></div>
+      <footer class="footer-content">
+        <div class="top-section">
+          <img class="logo-icon" alt="Logo" src="./assets/logo-1.svg">
+        </div>
+        <div class="footer-body">
+          <div class="rating-logos">
+            <img src="./assets/Rectangle 181.png" alt="">
+            <div class="rating-item">
+              <img class="rating-logo" alt="Upwork Logo" src="./assets/upwork-logo@2x.png">
+              <div class="rating-text">4.5/5 rating on Lorem</div>
+            </div>
+            <div class="rating-item">
+              <img class="rating-logo" alt="Dribble Logo" src="./assets/group-2701@2x.png">
+              <div class="rating-text">9/10 rating on Ipsum</div>
+            </div>
+            <div class="rating-item">
+              <img class="rating-logo" alt="Fiverr Logo" src="./assets/rectangle-100@2x.png">
+              <div class="rating-text">4.5/5 Rating on dorel</div>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="link-section">
+              <h3 class="link-heading">Quick Links</h3>
+              <ul class="link-list">
+                <li class="link-item">Home</li>
+                <li class="link-item">Skills</li>
+                <li class="link-item">Education</li>
+                <li class="link-item">Projects</li>
+                <li class="link-item">Recommendations</li>
+              </ul>
+            </div>
+            <div class="link-section">
+              <h3 class="link-heading">Portfolio</h3>
+              <ul class="link-list">
+                <li class="link-item">Frontend Development</li>
+                <li class="link-item">Backend Development</li>
+                <li class="link-item">Website Design</li>
+                <li class="link-item">Machine Learning</li>
+                <li class="link-item">Problem Solving & DSA</li>
+              </ul>
+            </div>
+            <div class="link-section">
+              <h3 class="link-heading">Connect</h3>
+              <div class="social-icons">
+                <img class="social-icon" alt="LinkedIn" src="./assets/linkedin1@2x.png">
+                <img class="social-icon" alt="Instagram" src="./assets/instagram1@2x.png">
+                <img class="social-icon" alt="Facebook" src="./assets/facebook1@2x.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <img class="copyright-icon" alt="Copyright" src="./assets/copyright-circle.svg">
+          <div class="copyright-text">2024 Copyright, All rights reserved</div>
+        </div>
+      </footer>
+      
+      
+    
+
+
+    </div>
+<script src="./skillsscript.js"></script>
+  </body>
+  
+</html>
